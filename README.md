@@ -1,4 +1,3 @@
-# BlogBackup
-frezc.github.io
+please visit site: https://frezc.github.io
 
 

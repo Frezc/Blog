@@ -3,7 +3,7 @@ date: 2015-05-01 01:08:22
 categories: 技术
 tags: hexo
 ---
-首先感谢[BranchZero](//loger.me)的帮忙
+首先感谢[BranchZero](http://loger.me)的帮忙
 
 hexo的确是很方便的博客框架，更改主题，写文章，同步什么的几句命令就搞定了，对于不想花太多时间搞这个的人来说是个省时利器。
 
@@ -51,5 +51,5 @@ Error: spawn git ENOENT
 提升访问速度
 ---
 hexo模板生成的文件基本是不变的, 可以将这些文件放到国内服务器上来增加访问速度。修改模板, 将引用地址改掉, 然后将生成文件放到服务器上就ok了。
-具体是由[BranchZero](//loger.me)帮忙的 ：D.
+具体是由[BranchZero](http://loger.me)帮忙的 ：D.
 
