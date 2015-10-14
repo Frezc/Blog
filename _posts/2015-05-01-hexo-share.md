@@ -1,7 +1,9 @@
+---
+layout: post
 title: hexo使用经验分享
 date: 2015-05-01 01:08:22
-categories: 技术
-tags: hexo
+categories: [tech]
+tags: [hexo]
 ---
 首先感谢[BranchZero](http://loger.me)的帮忙
 
@@ -24,15 +26,15 @@ npm
 不过这个主题也有点问题，就是没考虑好兼容https，如果使用https则需要修改掉模板中http的一些js库引用:
 - 首先是mathjax的库引用,因为我觉得不会用到这个功能,所以直接在_config.xml中将其设为false.
 - 然后是主题文件夹/layout/_partial/head.ejs中的
-  {% codeblock lang:html %}
+  {% highlight html %}
   <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-  {% endcodeblock %}
+  {% endhighlight %}
   改为https下的jquery库引用
 
 Deploy
 ---
 windows如果直接在目录下控制台中使用命令 *hexo d* 会出现错误he
-{% codeblock lang:Bash %}
+{% highlight Bash %}
 INFO  Deploying: git
 INFO  Clearing .deploy folder...
 INFO  Copying files from public folder...
@@ -44,7 +46,7 @@ Error: spawn git ENOENT
     at Process.ChildProcess._handle.onexit (child_process.js:1053:32)
     at child_process.js:1144:20
     at process._tickCallback (node.js:355:11)
-{% endcodeblock %}
+{% endhighlight %}
 解决方法是使用Git Bash, 如果出现了Not a gitreposity错误, 则需要你手动在.deploy_git文件夹下创建git库, 然后就能上传了。
 远程git库地址在_config.yml中指定(详情见文档), 建议使用ssh地址, 这样配置好密钥后每次提交就不需要输入验证信息了。
 
