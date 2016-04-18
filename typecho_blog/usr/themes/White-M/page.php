@@ -13,3 +13,5 @@
   </div>
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+
+<?php include_once("baidu_js_push.php") ?>
