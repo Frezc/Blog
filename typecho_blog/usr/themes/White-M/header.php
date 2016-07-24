@@ -56,7 +56,7 @@
     	<?php if (empty($this->options->menuDisplay) || in_array('page', $this->options->menuDisplay)): ?>
     	<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
       	<?php while($pages->next()): ?>
-          <li><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
+          <li<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?>><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
        	<?php endwhile; ?>
       <?php endif; ?>
     </ul>
