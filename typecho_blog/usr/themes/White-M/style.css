@@ -106,6 +106,13 @@ a {
 a:hover {
 	text-decoration:none;
 }
+code {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  background: #F3F3F0;
+  color: #c13;
+  padding: 2px 4px;
+  font-size: .92857em;
+}
 
 /* 主体结构 */
 .fuck {
