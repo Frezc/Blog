@@ -1,1 +1,1 @@
-please visit site: http://frezc.com (以前的文章)
+https://frezc.github.io
